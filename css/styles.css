@@ -1,0 +1,206 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans",sans-serif;
+}
+
+footer{
+  background: transparent;
+  padding: 50px 0;
+  font-family: Montserrat, sans-serif;
+}
+
+
+.social-media{
+  margin: 20px 0;
+}
+
+.social-media a{
+  color: none;
+  margin-right: 25px;
+  font-size: 22px;
+  text-decoration: none;
+  transition: .3s linear;
+}
+
+
+/* Style the icons by setting its color and margin-top value to 20px 
+to align it properly */
+.social-media a .fa {
+  color: #666a60;
+  margin-top: 0px;
+  transition: all 0.5s ease;
+}
+
+/* Now target the specific li classes for styling and use box-shadow effect to border and text-shadow effect
+  to icons for glowing effect and use transition property for smooth transition effect. */
+/*facebook*/
+.social-media a:hover.facebook {
+  border: 5px solid #3b5998;
+  box-shadow: 0 0 15px #3b5998;
+  transition: all 0.5s ease;
+}
+
+.social-media a:hover .fa-facebook {
+  color: #3b5998;
+  text-shadow: 0 0 15px #3b5998;
+  transition: all 0.5s ease;
+}
+
+/*twitter
+.social-media ul li:hover.twitter {
+  border: 5px solid #00aced;
+  box-shadow: 0 0 15px #00aced;
+  transition: all 0.5s ease;
+}*/
+
+.social-media a:hover .fa-twitter {
+  color: #00aced;
+  text-shadow: 0 0 15px #00aced;
+  transition: all 0.5s ease;
+}
+
+/* instagram */
+.social-media a:hover.instagram {
+  border: 5px solid #bc2a8d;
+  box-shadow: 0 0 15px #bc2a8d;
+  transition: all 0.5s ease;
+}
+
+.social-media a:hover .fa-instagram {
+  color: #bc2a8d;
+  text-shadow: 0 0 15px #bc2a8d;
+  transition: all 0.5s ease;
+}
+/*linked*/
+.social-media a:hover.linkedin {
+  border: 5px solid #00aced;
+  box-shadow: 0 0 15px #00aced;
+  transition: all 0.5s ease;
+}
+
+.social-media a:hover .fa-linkedin {
+  color: #00aced;
+  text-shadow: 0 0 15px #00aced;
+  transition: all 0.5s ease;
+}
+
+/* youtube-play */
+.social-media a:hover.youtube-play {
+  border: 5px solid #dd4b39;
+  box-shadow: 0 0 15px #dd4b39;
+  transition: all 0.5s ease;
+}
+
+.social-media a:hover .fa-youtube-play {
+  color: #dd4b39;
+  text-shadow: 0 0 15px #dd4b39;
+  transition: all 0.5s ease;
+}
+
+
+
+
+
+.social-media a:hover{
+  color: #fc5c65;
+}
+
+.right-col h1{
+  font-size: 26px;
+  margin: 0;
+  color: var(--color-headings);
+}
+
+@media screen and (max-width:960px) {
+  .footer-container{
+    max-width: 100%;
+  }
+    .right-col{
+      width: 100%;
+      margin-bottom: 0px;
+    }
+
+  .left-col{
+    width: 100%;
+    text-align: center;
+  }
+}
+/*///////DARKMODE//////////////////////////////*/
+html {
+  height: 100%;
+  font-family: 'Montserrat';
+
+  display: grid;
+  align-items: center;
+  justify-items: center;
+
+  --bg: #FCFCFC;
+  --bg-panel: #EBEBEB;
+  --color-headings: #0077FF;
+  --color-text: #333333;
+}
+
+html[data-theme='dark'] {
+  --bg: #333333;
+  --bg-panel: #434343;
+  --color-headings: #3694FF;
+  --color-text: #B5B5B5;
+}
+
+
+
+
+
+
+
+input[type=checkbox]{
+height: 0;
+width: 0;
+visibility: hidden;
+}
+
+label {
+cursor: pointer;
+text-indent: -9999px;
+width: 52px;
+height: 27px;
+background: grey;
+float: right;
+border-radius: 100px;
+position: relative;
+}
+
+label:after {
+content: '';
+position: absolute;
+top: 3px;
+left: 3px;
+width: 20px;
+height: 20px;
+background: #fff;
+border-radius: 90px;
+transition: 0.3s;
+}
+
+input:checked + label {
+background: var(--color-headings);
+}
+
+input:checked + label:after {
+left: calc(100% - 5px);
+transform: translateX(-100%);
+}
+
+label:active:after {
+width: 45px;
+}
+
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+transition: all 750ms !important;
+transition-delay: 0 !important;
+}
+
